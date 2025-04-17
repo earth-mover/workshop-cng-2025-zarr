@@ -1,0 +1,7 @@
+# TODO: add restrictions
+rioxarray
+matplotlib
+icechunk
+jupyterlab
+zarr
+xarray

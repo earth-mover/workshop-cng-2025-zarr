@@ -1,0 +1,11 @@
+name: em-workshop-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - rioxarray
+  - matplotlib
+  - icechunk
+  - jupyterlab
+  - zarr
+  - xarray
