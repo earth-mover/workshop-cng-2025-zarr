@@ -1,23 +1,7 @@
 import icechunk as ic
 import xarray as xr
 
-storage = ic.s3_storage(
-    bucket="icechunk-public-data",
-    prefix=f"v1/glad",
-    region="us-east-1",
-    anonymous=True,
-)
-repo = ic.Repository.open(storage=storage)
-session = repo.readonly_session("main")
-ds = xr.open_dataset(
-    session.store, chunks=None, consolidated=False, engine="zarr"
-)
-print(ds)
 
-import geopandas as gpd
-
-shapes = gpd.read_file("notebooks/gz_2010_us_040_00_500k.json")
-utah = shapes.loc[shapes["NAME"] == "Utah"]["geometry"]
 
 print(utah.crs)
 
@@ -25,10 +9,6 @@ print(utah.crs)
 import odc.geo.xr  # registers the `.odc` accessor
 import rioxarray
 
-bbox = utah.to_crs("EPSG:4326").total_bounds
-
-clipped = ds.rio.clip_box(*bbox).chunk({"x": 1000, "y": 1000})
-print(clipped)
 
 import pandas as pd
 from xarray.groupers import BinGrouper
@@ -46,8 +26,19 @@ index = pd.IntervalIndex(list(legend.values()))
 lulc_grouper = BinGrouper(bins=index, labels=list(legend.keys()))
 print(lulc_grouper)
 
-data_group = clipped.groupby(lclu=lulc_grouper)
-print(data_group)
+import odc.geo.xr
+
+reproj = clipped.odc.reproject("EPSG:4269")
+print(reproj.spatial_ref)
+
+
+
+
+
+
+
+# data_group = clipped.groupby(lclu=lulc_grouper)
+# print(data_group)
 # data_group = data_group.count(dim=("x", "y"))
 # print(data_group)
 

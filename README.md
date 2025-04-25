@@ -1,9 +1,9 @@
-TODO: add earthmover logo
+![](./assets/earthmover.png)
 
-# Welcome to Earthmover's CNG 2025 Workshop :wave:
+# CNG 2025: Earthmover Workshop
 ## Zarr, Icechunk, & Xarray for Cloud-native Geospatial Data-cube Analysis
 
-TODO: Intro
+This workshop is designed as an on-ramp to using the Zarr data format for cloud-native geospatial datacube analysis. Guided by experience running similar workshops for the earth, ocean, atmosphere, & climate sciences, we focus on the conceptual underpinnings of array data analytics using Zarr & Xarray.
 
 **Learning Objectives:**
 
@@ -15,7 +15,9 @@ TODO: Intro
 
 ## Materials
 
-TODO: link to tutorial notebook
+Materials for this workshop can be found under the [`notebooks`](./notebooks/). The workshop has been split into two parts:
+- Part 1 serves as a introduction to the Zarr storage model via a tutorial on how to convert a timeseries of GeoTIFF files into a Zarr store ([notebook](./notebooks/workshop-part-1.ipynb))
+- Part 2 focuses on how to effectively wield a global Zarr datacube for common geospatial use-cases such as AOI-driven zonal statistics, masking, and reprojecting ([notebook](./notebooks/workshop-part-2.ipynb))
 
 ## Setup
 
@@ -54,7 +56,12 @@ pip install -r requirements.txt
 
 ### `virtualenv`
 
-### conda
+```
+
+
+```
+
+### `conda`
 
 ```
 cd workshop-cng-2025-zarr
