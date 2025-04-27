@@ -8,4 +8,10 @@ dependencies:
   - icechunk
   - jupyterlab
   - zarr
-  - xarray
+  - geopandas
+  - odc-geo
+  - dask
+  - flox
+  - contextily
+  - pip:
+      - git+https://github.com/dcherian/xarray.git@cng-workshop
