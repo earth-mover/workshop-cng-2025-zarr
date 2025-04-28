@@ -10,9 +10,14 @@ geoviews>=1.14.0,<2.0.0
 datashader>=0.18.0,<1.0.0
 jupyter_bokeh>=4.0.5,<5.0.0
 dask>=2025.4.0,<2026.0.0
+distributed>=2025.4.0,<2026.0.0
 geopandas>=1.0.1,<2.0.0
 odc-geo>=0.4.10,<1.0.0
 flox>=0.10.3,<1.0.0
 contextily>=1.6.2,<2.0.0
 netcdf4>=1.26.4,<2.0.0
+coiled==1.93.0
+dask-geopandas==0.4.3
+jupyter-server-proxy==4.4.0
+rasterix
 xarray @ git+https://github.com/dcherian/xarray.git@cng-workshop
