@@ -6,6 +6,7 @@ dependencies:
   - rioxarray=~0.19.0
   - matplotlib=~3.10.1
   - icechunk=~0.2.15
+  - netcdf4
   - jupyterlab
   - zarr=~3.0.7
   - leafmap=~0.43.6
