@@ -14,4 +14,5 @@ geopandas>=1.0.1,<2.0.0
 odc-geo>=0.4.10,<1.0.0
 flox>=0.10.3,<1.0.0
 contextily>=1.6.2,<2.0.0
+netcdf4>=1.26.4,<2.0.0
 xarray @ git+https://github.com/dcherian/xarray.git@cng-workshop

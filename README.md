@@ -1,7 +1,7 @@
 ![](./assets/earthmover.png)
 
-# CNG 2025: Earthmover Workshop
-## Zarr, Icechunk, & Xarray for Cloud-native Geospatial Data-cube Analysis
+# Zarr, Icechunk, & Xarray for Cloud-native Geospatial Data-cube Analysis
+## CNG 2025: Earthmover Workshop
 
 This workshop is designed as an on-ramp to using the Zarr data format for cloud-native geospatial datacube analysis. Guided by experience running similar workshops for the earth, ocean, atmosphere, & climate sciences, we focus on the conceptual underpinnings of array data analytics using Zarr & Xarray.
 
@@ -29,7 +29,7 @@ We assume that `Python>=3.11` is already installed on the device you are using f
 
 The dependencies required for executing the notebooks in this workshop are in `requirements.txt` and `environment.yaml` for `conda` users. 
 
-We recommend using `pip` + `venv` to create an isolated virtual environment with these dependencies, but you may choose to install these dependencies however you like. Virtualenv and conda are also valid choices.
+We recommend using `pip` + `venv` to create an isolated virtual environment with these dependencies, but you may choose to install these dependencies however you like. `Virtualenv` and `conda` are also valid choices.
 
 
 ### `venv`
@@ -45,7 +45,12 @@ python3.12 -m venv em-workshop-env
 Activate the virtual environment:
 
 ```
-source em-workshop-env/bin/activate  # Windows: workshop-env\Scripts\activate
+# On Linux/macOS:
+source em-workshop-env/bin/activate
+# On Windows (cmd):
+em-workshop-env\Scripts\activate
+# On Windows (PowerShell):
+em-workshop-env\Scripts\Activate.ps1
 ```
 
 Install the dependencies in the environment:
@@ -57,8 +62,16 @@ pip install -r requirements.txt
 ### `virtualenv`
 
 ```
+virtualenv -p python3.12 venv
 
+# On Linux/macOS:
+source em-workshop-env/bin/activate
+# On Windows (cmd):
+em-workshop-env\Scripts\activate
+# On Windows (PowerShell):
+em-workshop-env\Scripts\Activate.ps1
 
+pip install -r requirements.txt
 ```
 
 ### `conda`
