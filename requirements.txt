@@ -19,6 +19,7 @@ netcdf4>=1.6.4,<2.0.0
 coiled==1.93.0
 dask-geopandas==0.4.3
 jupyter-server-proxy==4.4.0
+boto3==1.33.2
 s3fs>=2025.03.0
 rasterix
 xarray @ git+https://github.com/dcherian/xarray.git@cng-workshop
