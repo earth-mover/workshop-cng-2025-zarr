@@ -21,9 +21,9 @@ Login with coiled:
 coiled login --token dcc3a09a40124f2784e76a4c58f8f526-2786b1f979cb29f2592904aedfa4bb8a5c1d1e83
 ```
 
-Start a notebook server
+Start a notebook server. Since we cannot commit AWS Secrets, please navigate to https://github.com/earth-mover/workshop-cng-2025-zarr/issues/15 and run the command in the issue.
 ``` sh
-coiled notebook start --software cng-workshop-2025 --region us-east-1 --vm-type m6i.2xlarge 
+coiled notebook start...
 ```
 This will inject AWS credentials into your environment. These are temporary, scoped credentials that will not work after the workshop is over.
 
