@@ -11,7 +11,10 @@ This workshop is designed as an on-ramp to using the Zarr data format for cloud-
 
 ## Setup for CNG 2025
 
-First clone the repository
+First install `coiled` with `pip`:
+```sh
+pip install coiled
+```
 
 Login with coiled:
 ``` sh
@@ -20,14 +23,19 @@ coiled login --token dcc3a09a40124f2784e76a4c58f8f526-2786b1f979cb29f2592904aedf
 
 Start a notebook server
 ``` sh
-coiled notebook start --software cng-workshop-2025 --region us-east-1 --vm-type m6i.2xlarge
+coiled notebook start --software cng-workshop-2025 --region us-east-1 --vm-type m6i.2xlarge 
 ```
+This will inject AWS credentials into your environment. These are temporary, scoped credentials that will not work after the workshop is over.
 
 Once the server is up, open a Terminal and clone the workshop materials:
 ``` sh
 git clone https://github.com/earth-mover/workshop-cng-2025-zarr
 cd workshop-cng-2025-zarr/notebooks
 ```
+
+You will need to navigate to the `workshop-cng-2025-zarr/notebooks` folder in the left side-bar. To start, open up `workshop-part-1.ipynb`
+
+
 -----
 
 **Learning Objectives:**
