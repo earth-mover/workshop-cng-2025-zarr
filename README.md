@@ -11,7 +11,9 @@ This workshop is designed as an on-ramp to using the Zarr data format for cloud-
 
 ## Setup for CNG 2025
 
-First install `coiled` with `pip`:
+We will be using a [Coiled](https://coiled.io/) machine for this workshop. You will lose access to this machine at the conclusion of this workshop. 
+
+First install `coiled` with `pip`. This step requires that you already have `pip` on your machine. 
 ```sh
 pip install coiled
 ```
@@ -51,7 +53,7 @@ Materials for this workshop can be found under the [`notebooks`](./notebooks/). 
 - Part 1 serves as a introduction to the Zarr storage model via a tutorial on how to convert a timeseries of GeoTIFF files into a Zarr store ([notebook](./notebooks/workshop-part-1.ipynb))
 - Part 2 focuses on how to effectively wield a global Zarr datacube for common geospatial use-cases such as AOI-driven zonal statistics, masking, and reprojecting ([notebook](./notebooks/workshop-part-2.ipynb))
 
-## Setup
+## Setup - Disregard for CNG 2025 Workshop
 
 ### Python
 
