@@ -25,6 +25,7 @@ localtileserver>=0.10.6,<1.0.0
 pooch>=1.8.2,<2.0.0
 virtualizarr>=1.3.2,<2.0.0
 seaborn>=0.13.2,<0.14.0
+h5py>=3.13.0,<4.0.0
 rasterix
 xarray @ git+https://github.com/dcherian/xarray.git@cng-workshop
 xvec @ git+https://github.com/xarray-contrib/xvec.git

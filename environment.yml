@@ -25,6 +25,7 @@ dependencies:
   - pooch>=1.8.2,<2.0.0
   - virtualizarr>=1.3.2,<2.0.0
   - seaborn>=0.13.2,<0.14.0
+  - h5py>=3.13.0,<4.0.0
   - pip  # add pip so pip dependencies can be installed
   - pip:
       - git+https://github.com/dcherian/xarray.git@cng-workshop
