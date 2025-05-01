@@ -28,5 +28,6 @@ dependencies:
   - h5py>=3.13.0,<4.0.0
   - pip  # add pip so pip dependencies can be installed
   - pip:
+      - 'virtualizarr[hdf,icechunk]'
       - git+https://github.com/dcherian/xarray.git@cng-workshop
       - git+https://github.com/xarray-contrib/xvec.git
