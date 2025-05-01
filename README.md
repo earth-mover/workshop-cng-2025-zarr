@@ -11,7 +11,9 @@ This workshop is designed as an on-ramp to using the Zarr data format for cloud-
 
 ## Setup for CNG 2025
 
-First install `coiled` with `pip`:
+We will be using a [Coiled](https://coiled.io/) machine for this workshop. You will lose access to this machine at the conclusion of this workshop. 
+
+First install `coiled` with `pip`. This step requires that you already have `pip` on your machine. 
 ```sh
 pip install coiled
 ```
