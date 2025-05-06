@@ -6,38 +6,6 @@
 
 This workshop is designed as an on-ramp to using the Zarr data format for cloud-native geospatial datacube analysis. Guided by experience running similar workshops for the earth, ocean, atmosphere, & climate sciences, we focus on the conceptual underpinnings of array data analytics using Zarr & Xarray.
 
-
------
-
-## Setup for CNG 2025
-
-We will be using a [Coiled](https://coiled.io/) machine for this workshop. You will lose access to this machine at the conclusion of this workshop. 
-
-First install `coiled` with `pip`. This step requires that you already have `pip` on your machine. 
-```sh
-pip install coiled
-```
-
-Login with coiled:
-``` sh
-coiled login --token dcc3a09a40124f2784e76a4c58f8f526-2786b1f979cb29f2592904aedfa4bb8a5c1d1e83
-```
-
-Start a notebook server. Since we cannot commit AWS Secrets, please navigate to https://github.com/earth-mover/workshop-cng-2025-zarr/issues/15 and run the command in the issue.
-``` sh
-coiled notebook start...
-```
-This will inject AWS credentials into your environment. These are temporary, scoped credentials that will not work after the workshop is over.
-
-Once the server is up, open a Terminal and clone the workshop materials:
-``` sh
-git clone https://github.com/earth-mover/workshop-cng-2025-zarr
-cd workshop-cng-2025-zarr/notebooks
-```
-
-You will need to navigate to the `workshop-cng-2025-zarr/notebooks` folder in the left side-bar. To start, open up `workshop-part-1.ipynb`
-
-
 -----
 
 **Learning Objectives:**
@@ -53,7 +21,7 @@ Materials for this workshop can be found under the [`notebooks`](./notebooks/). 
 - Part 1 serves as a introduction to the Zarr storage model via a tutorial on how to convert a timeseries of GeoTIFF files into a Zarr store ([notebook](./notebooks/workshop-part-1.ipynb))
 - Part 2 focuses on how to effectively wield a global Zarr datacube for common geospatial use-cases such as AOI-driven zonal statistics, masking, and reprojecting ([notebook](./notebooks/workshop-part-2.ipynb))
 
-## Setup - Disregard for CNG 2025 Workshop
+## Setup
 
 ### Python
 
